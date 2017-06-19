@@ -1,9 +1,13 @@
 import webbrowser
 
+# Class pulls info from the movie.py file
+
 
 class Movie():
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 
+# This docstring tells the file what each line
+# in entertainment.py file is
     def __init__(self, movie_title, movie_storyline,
                  poster_image, trailer_youtube):
         self.title = movie_title
@@ -11,5 +15,8 @@ class Movie():
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
-    def show_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)
+    # This docstring opens the webbrowser page
+
+
+def show_trailer(self):
+    webbrowser.open(self.trailer_youtube_url)
